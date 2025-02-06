@@ -1,7 +1,8 @@
 {
   "name": "server-demo",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "engines": {
     "npm": "10.8.2",
     "node": "20.16.0"
