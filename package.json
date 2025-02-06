@@ -1,15 +1,15 @@
 {
   "name": "server-demo",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "main": "dist/index.js",
   "engines": {
     "npm": "10.8.2",
     "node": "20.16.0"
   },
   "scripts": {
-    "start": "node --loader ts-node/esm index.ts",
-    "dev": "nodemon --loader ts-node/esm index.ts"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --ext ts --exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,7 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "nodemon": "^3.1.0"
   }
 }
